@@ -73,6 +73,6 @@ def search(args=sys.argv):
     result = results[0]
     print(result)
     plt.title(result)
-    image = mpimg.imread('./images/' + result)
+    image = mpimg.imread(f'./images/{result}')
     plt.imshow(image)
     plt.show()
